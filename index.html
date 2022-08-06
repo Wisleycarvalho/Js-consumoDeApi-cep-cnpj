@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/cep.js" type='module' defer></script>
+    <script src="./js/cnpj.js" type='module' defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <title>CEP/CNPJ</title>
+    
+</head>
+<body>
+   <div class="main-validacao">
+    <div class="box1">
+     <div class="left-cep">
+        <form method="get">
+            <label>Cep:
+            <input name="cep" type="text"  id="cep" size="10" maxlength="9"  placeholder="CEP" ></label><br/>
+            <label>Rua:
+            <input name="rua" type="text" id="rua" size="60" placeholder="rua"/></label><br />
+            <label>Bairro:
+            <input name="bairro" type="text" id="bairro" size="40" placeholder="bairro"/></label><br />
+            <label>Cidade:
+            <input name="cidade" type="text" id="cidade" size="40" placeholder="cidade"/></label><br />
+            <label>Estado:
+            <input name="uf" type="text" id="uf" size="2" placeholder="estado"/></label><br />
+          </form>
+     </div>
+    </div>   
+     <div class="box2">
+     <div class="right-cnpj">
+        <label>CNPJ:
+        <input name="cnpj"  type="text"  id="cnpj" maxlength="18" placeholder="CNPJ"></label><br/>
+        <label>Razão Social:
+         <input name="razao_social" type="text" id="razao_social" size="60" placeholder="razao social"/></label><br />
+         <label>Nome Fantasia:
+         <input name="nome_fantasia" type="text" id="nome_fantasia" size="60" placeholder="nome fantasia"/></label><br />
+         <label>CEP:
+         <input name="cep" type="text" id="Cep" size="60" placeholder="cep"/></label><br />
+         <label>Telefone:
+         <input name="telefone" type="text" id="telefone" size="60" placeholder="telefone"/></label><br />
+     </div>
+     </div>
+   </div>
+</body>
+</html>
